@@ -1,0 +1,52 @@
+{
+    "menu": {
+        "breakfast": [
+            {
+                "id": 1,
+                "name": "Pancakes",
+                "description": "Fluffy pancakes served with maple syrup and butter",
+                "price": 5.99,
+                "imgUrl": "assets/img/pancakes.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Scrambled Eggs",
+                "description": "Scrambled eggs with toast and bacon",
+                "price": 6.99,
+                "imgUrl": "assets/img/scrambedegss.jpg"
+            }
+        ],
+        "lunch": [
+            {
+                "id": 3,
+                "name": "Chicken Caesar Salad",
+                "description": "Grilled chicken, romaine lettuce, and creamy Caesar dressing",
+                "price": 8.99,
+                "imgUrl": "assets/img/ChickenCaesarSalad.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Cheeseburger",
+                "description": "Juicy cheeseburger with lettuce, tomato, and pickles",
+                "price": 9.99,
+                "imgUrl": "assets/img/Cheeseburger.jpg"
+            }
+        ],
+        "dinner": [
+            {
+                "id": 5,
+                "name": "Steak",
+                "description": "Grilled steak with mashed potatoes and green beans",
+                "price": 14.99,
+                "imgUrl": "assets/img/steak.jpg"
+            },
+            {
+                "id": 6,
+                "name": "Salmon",
+                "description": "Grilled salmon with lemon butter sauce and asparagus",
+                "price": 13.99,
+                "imgUrl": "assets/img/salmon.jpg"
+            }
+        ]
+    }
+}

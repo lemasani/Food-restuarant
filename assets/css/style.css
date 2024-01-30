@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+.food{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap
+}
+
+.food-item{
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    width: 200px;
+}
+
+.food-item img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
