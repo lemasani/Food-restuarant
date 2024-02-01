@@ -9,19 +9,69 @@ body{
     background: #fafafa;
 }
 
-.food{
+h2{
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+.btns{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin: 20px 0
+}
+
+.btn{
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fafafa;
+    background-color: #11c511;
+}
+
+.food{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     flex-wrap: wrap
 }
 
 .food-item{
+    position: relative;
     border-radius: 8px;
-    border: 1px solid #e0e0e0;
-    width: 200px;
+    box-shadow: #e0e0e0 0px 0px 10px;
+    width: calc(49% - 7px); /* 15 + (2 * 7) = 29 */
+    width: 300px;
+}
+
+.food-item h3{
+    top: 0;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    font-size: 14pt
+}
+.food-item p{
+    padding: 10px;
+    text-align: justify;
+}
+
+.price{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    border-radius: 8px 0 0 0;
+    background-color: #e0e0e0;
+    color: #11c511;
+    font-weight: bold;
+    font-size: 14pt;
 }
 
 .food-item img{
