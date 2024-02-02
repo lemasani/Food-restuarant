@@ -1,3 +1,4 @@
+<?php?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +15,9 @@
     <h2>Hello, welcome at the restuarant</h2>
 
     <div class="btns">
-        <button class="btn btn1">Breakfast</button>
-        <button class="btn btn2">Lunch</button>
-        <button class="btn btn3">Dinner</button>
+        <button id="button1" class="btn btn1">Breakfast</button>
+        <button id="button2" class="btn btn2">Lunch</button>
+        <button id="button3" class="btn btn3">Dinner</button>
     </div>
 
     <div class="food">
@@ -27,3 +28,4 @@
     <script type="module" src="app.js"></script>
 </body>
 </html>
+<?php?>
