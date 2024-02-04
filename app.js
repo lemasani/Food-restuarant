@@ -1,12 +1,7 @@
 const foodItem = document.querySelector('.food');
-// const btn1 = document.querySelector('.btn1');
-// const btn2 = document.querySelector('.btn2');
-// const btn3 = document.querySelector('.btn3');
-
-const btn1 = document.getElementById("button1");
-const btn2 = document.getElementById("button2");
-const btn3 = document.getElementById("button3");
-
+const btn1 = document.querySelector('.btn1');
+const btn2 = document.querySelector('.btn2');
+const btn3 = document.querySelector('.btn3');
 const url = './menu.json';
 // const url = 'Food-restuarant/menu.json'
 let isFoodSelected = false;
@@ -57,70 +52,19 @@ const foodItemUI = (item) => {
     return div
 }
 
-function selectFood() {
-    isFoodSelected = true;
-    console.log('selectFood');
-    
+function selectFoodUI(mealType) {
+    if(isFoodSelected) {
+        while (foodItem.firstChild) {
+            foodItem.removeChild(foodItem.firstChild);
+        }
+        displayMeal(mealType);
+    } else {
+        displayMeal(mealType);
+    }
 }
 
-// function displayBreakfast() {
-//     if(isFoodSelected) {
-//         foodItem.innerHTML = '';
-//         isFoodSelected = false;
-//     }else{
-//     fetchMenu(url).then(data => {
-//         isFoodSelected = true;
-//         const breakfast = data.menu.breakfast;
-//               breakfast.forEach(item => {
-//                 const menuItem = foodItemUI(item);
-//                 foodItem.appendChild(menuItem)
-//         });
-       
-//     })
-// }
-// };
-
-// function displayLunch() {
-//     if(isFoodSelected) {
-//         foodItem.innerHTML = '';
-//         isFoodSelected = false;
-//     }else{
-//         fetchMenu(url).then(data => {
-//         isFoodSelected = true;
-//         const lunch = data.menu.lunch;
-//         lunch.forEach(item => {
-//             const menuItem = foodItemUI(item);
-//             foodItem.appendChild(menuItem)
-//         });
-//     })
-// }
-// }
-
-// function displayDinner() {
-//     if(isFoodSelected) {
-//         foodItem.innerHTML = '';
-//         isFoodSelected = false;
-//     }else{
-//     fetchMenu(url).then(data => {
-//         isFoodSelected = true;
-//         const dinner = data.menu.dinner;
-//         dinner.forEach(item => {
-//             const menuItem = foodItemUI(item);
-//             foodItem.appendChild(menuItem)
-//         });
-//     })
-// }
-// }
-
-// btn1.addEventListener("click", displayBreakfast)
-// btn2.addEventListener("click", displayLunch)
-// btn3.addEventListener("click", displayDinner)
-
 function displayMeal(mealType) {
-    if(isFoodSelected) {
-        foodItem.innerHTML = '';
-        isFoodSelected = false;
-    } else {
+    
         fetchMenu(url).then(data => {
             isFoodSelected = true;
             const meal = data.menu[mealType];
@@ -130,9 +74,9 @@ function displayMeal(mealType) {
             });
         })
     }
-}
 
-btn1.addEventListener("click", () => displayMeal('breakfast'));
-btn2.addEventListener("click", () => displayMeal('lunch'));
-btn3.addEventListener("click", () => displayMeal('dinner'));
+
+btn1.addEventListener("click", () => selectFoodUI('breakfast'));
+btn2.addEventListener("click", () => selectFoodUI('lunch'));
+btn3.addEventListener("click", () => selectFoodUI('dinner'));
 
