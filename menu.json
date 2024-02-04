@@ -14,18 +14,66 @@
                 "description": "Scrambled eggs with toast and bacon",
                 "price": 6.99,
                 "imgUrl": "assets/img/scrambedegss.jpg"
+            },{
+                "id": 3,
+                "name": "French Toast",
+                "description": "Bread dipped in egg batter and fried, often served with syrup and toppings.",
+                "price": 8.99,
+                "imgUrl": "assets/img/French Toast.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Breakfast Burrito",
+                "description": "Scrambled eggs, sausage, cheese, and other fillings wrapped in a tortilla.",
+                "price": 9.49,
+                "imgUrl": "assets/img/Breakfast Burrito.jpg"
+            },
+            {
+                "id": 5,
+                "name": "Avocado Toast",
+                "description": "Toasted bread topped with mashed avocado, often with additional toppings",
+                "price": 9.99,
+                "imgUrl": "assets/img/Avocado Toast.jpg"
+            },
+            {
+                "id": 6,
+                "name": "Yogurt Parfait",
+                "description": "Layered yogurt, granola, and fruit, often served with nuts and honey",
+                "price": 10.49,
+                "imgUrl": "assets/img/Yogurt Parfait.jpg"
+            },
+            {
+                "id": 7,
+                "name": "Smoothie Bowl",
+                "description": "Thick smoothie poured into a bowl and topped with various ingredients",
+                "price": 11.49,
+                "imgUrl": "assets/img/Smoothie Bowl.jpg"
+            },
+            {
+                "id": 8,
+                "name": "Eggs Benedict",
+                "description": "English muffin topped with Canadian bacon, poached egg, and hollandaise sauce",
+                "price": 11.99,
+                "imgUrl": "assets/img/Eggs Benedict.jpg"
+            },
+            {
+                "id": 9,
+                "name": "Omelette",
+                "description": "Rolled or folded egg pancake filled with various ingredients.",
+                "price": 12.49,
+                "imgUrl": "assets/img/Omelette.jpg"
             }
         ],
         "lunch": [
             {
-                "id": 3,
+                "id": 1,
                 "name": "Chicken Caesar Salad",
                 "description": "Grilled chicken, romaine lettuce, and creamy Caesar dressing",
                 "price": 8.99,
                 "imgUrl": "assets/img/ChickenCaesarSalad.jpg"
             },
             {
-                "id": 4,
+                "id": 2,
                 "name": "Cheeseburger",
                 "description": "Juicy cheeseburger with lettuce, tomato, and pickles",
                 "price": 9.99,
@@ -34,14 +82,14 @@
         ],
         "dinner": [
             {
-                "id": 5,
+                "id": 1,
                 "name": "Steak",
                 "description": "Grilled steak with mashed potatoes and green beans",
                 "price": 14.99,
                 "imgUrl": "assets/img/steak.jpg"
             },
             {
-                "id": 6,
+                "id": 2,
                 "name": "Salmon",
                 "description": "Grilled salmon with lemon butter sauce and asparagus",
                 "price": 13.99,

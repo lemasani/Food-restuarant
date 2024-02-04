@@ -49,6 +49,11 @@ h2{
     box-shadow: #e0e0e0 0px 0px 10px;
     width: calc(49% - 7px); /* 15 + (2 * 7) = 29 */
     width: 300px;
+    overflow: hidden;
+}
+.food-item img:hover{
+    transform: scale(0.99);
+    transition: all 0.3s ease
 }
 
 .food-item h3{
@@ -59,7 +64,7 @@ h2{
 }
 .food-item p{
     padding: 10px;
-    text-align: justify;
+    text-align: center;
 }
 
 .price{
